@@ -10,16 +10,16 @@ async function counter_fn() {
     count++;
     counter.innerHTML = count;
 
-    //POST updated count to DB
-    // const postResponse = await fetch(url, {
-    //     method: 'POST',
-    //     mode: 'cors',
-    //     body: JSON.stringify({
-    //         "countId": count
-    //     })
-    // });
-    // const postJson = await postResponse.json();
-    // console.log(postJson);
+    POST updated count to DB
+    const postResponse = await fetch(url, {
+        method: 'POST',
+        mode: 'cors',
+        body: JSON.stringify({
+            "countId": count
+        })
+    });
+    const postJson = await postResponse.json();
+    console.log(postJson);
 
   }
   window.onload = counter_fn;
