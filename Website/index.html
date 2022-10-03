@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js" defer></script>
+        <title> My Cloud Resume</title>
+        <link rel="icon" href="images/favicon.png">
+    </head>
+    <body>
+        <div class="header" id="myHeader">
+            <div class="header-text">
+                <div class="counter">Page Visits:</div>
+                <div class="counter" id="cntr"></div>
+                <h1 class="">Nick Carpenter</h1>
+                <p>
+                    (218) 329-5434 | 1219 12th St S, Moorhead, MN | <a href= "mailto: nickcarpenter1017@gmail.com">nickcarpenter1017@gmail.com</a> | <a href="https://www.linkedin.com/in/nick-carpenter/">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+        <div class="body grow">
+            <div class="body-text">
+                <h2 style="text-align:left">Experience</h2>
+                <h3>Consulting Systems Specialist III</h3>
+                <p style="text-align:left">
+                    <span style="float: left">Quest Software | Remote</span>
+                    <span style="float: Right">Feb. 2021-Present</span>
+                </p><br>
+                <p style="text-align:left">
+                    Currently working in a Migration-as-a-Service (MaaS) team as a lead technical consultant. Our team delivers industry leading migration 
+                    services to enterprise companies going through mergers, acquisitions, and divestitures.
+                    We focus primarily on providing domain expertise and consulting services during fast-paced O365 and AD migrations. 
+                    <p><b>Key Responsibilities:</b></p>
+                     <ul>
+                        <li>Consult with key project stakeholders to deliver migration procedures and approaches that best fit the client's needs.</li>
+                        <li>Fill the role of being a domain expert on technical scenarios involving AD and O365 tenant-to-tenant migrations.</li>
+                        <li>Operate as the main migration engineer to run and facilitate active migrations using Quest's proprietary software.</li>
+                    </ul>
+                </p>
+                <h3>Support & Operations Engineer</h3>
+                <p style="text-align:left">
+                    <span style="float: left">Quadrotech | Fargo, ND (Remote)</span>
+                    <span style="float: Right">July 2018 - Jan. 2021</span>
+                </p><br>
+                <p style="text-align:left">
+                    Managed and supported daily operations for O365 Tenant to Tenant migrations. Leveraged PowerShell, Sumologic, Azure App Service, 
+                    and other Azure resources to monitor and investigate escalated production issues. 
+                    Provided migration and custom data reporting via SQL + Azure Table storage to achieve SLAs. 
+                    <p><b>Key Accomplishments:</b></p>
+                     <ul>
+                        <li>Migrated a total of over 5 PB of email data for several Fortune 500 companies.</li>
+                        <li>Closed over 350 IT cases and escalations while maintaining a 4.95/5 ticketing survey average (Kayako).</li>
+                        <li>Consolidated over 150 Microsoft tenants (Exchange + Teams) into a single tenant for a global media company.</li>
+                    </ul>
+                </p>
+                <h3>System Administrator Intern</h3>
+                <p style="text-align:left">
+                    <p style="text-align:left">
+                        <span style="float: left">North Dakota State University | Fargo, ND</span>
+                        <span style="float: Right">Jan. 2017 - July 2018</span>
+                    </p><br>
+                </p>
+                <p style="text-align:left">
+                    Worked as an intern under the lead HPC System Administrator learning many tools and concepts related to clustered Linux administration. 
+                    Most of my time was spent on configuring software and networks for testing clusters, assisting with hardware installation, and maintaining department website content. 
+                    <p><b>Key Accomplishments:</b></p>
+                     <ul>
+                        <li>Constructed a 20+ node cluster to replicate our department's production HPC cluster for the purpose of production development and testing.</li>
+                        <li>Played a lead role in updating and migrating the entire departments website from Drupal to TYPO3 using HTML, CSS, and JavaScript.</li>
+                        <li>Developed production scripts in Bash/Python used for monitoring and notifying end users. </li><br>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="body grow">
+            <div class="body-text">
+                <h2 style="text-align:left">Education</h2>
+                <h3>B.S. Computer Science</h3>
+                <p style="text-align:left">
+                    <span style="float: left">North Dakota State University | Fargo, ND (Remote)</span>
+                    <span style="float: Right">July 2018 - Jan. 2021</span>
+                </p><br>
+                <ul>
+                    <li>GPA: 3.0/4.0</li>
+                    <li>Dean's List 2017-2018</li>
+                </ul><br>
+            </div>
+        </div>
+        <div class="body grow">
+            <div class="body-text">
+                <h2 style="text-align:left">Skills</h2>
+                <p style="text-align:left"><b>OS:</b> macOS, CentOS, Ubuntu, Windows 10, Windows Server | <b>Scripting:</b> Powershell, Python, Bash | 
+                <b>Tools:</b> Excel, Visual Studio, SSMS, Git, SVN <br> <b>Development:</b> JavaScript, HTML/CSS, SQL | <b>Admin:</b> LDAP, Kerberos, TCP/IP, PBS, Docker</p><br>
+            </div>
+        </div>
+        <div class="body grow">
+            <div class="body-text">
+                <h2 style="text-align:left">Projects</h2>
+                <p style="text-align:left"><b>The Cloud Resume Challenge</b> - Developing core cloud engineering skills</p>
+                <P><a href="https://cloudresumechallenge.dev/">Cloud Resume Challenge Website</a></P>
+                <p> This resume is hosted on AWS using S3 and CloudFront.</p>
+            </div>
+        </div>
+        <div class="body grow">
+            <div class="body-text">
+                <h2 style="text-align:left">Certifications</h2>
+                <p style="text-align:left"><b>AWS Certified Cloud Practitioner (2022)</b> - Cloud fluency and foundational AWS knowledge</p><br>
+            </div>
+        </div>
+
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+            
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+                } else {
+                header.classList.remove("sticky");
+                }
+            }
+        </script>
+    </body>
+</html>
